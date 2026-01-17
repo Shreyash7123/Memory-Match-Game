@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Match - Educational Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="game-container">
+    <div class="game-header">
+      <h1>🧠 Memory Match 🧠</h1>
+      <p>Find all the matching pairs!</p>
+    </div>
+
+    <div class="instructions">
+      <h3>How to Play:</h3>
+      <p>
+        Click on cards to flip them over. Find all matching pairs of animals!
+        Try to remember where each animal is.
+      </p>
+    </div>
+
+    <div class="difficulty-selector">
+      <button class="difficulty-btn active" onclick="setDifficulty('easy', this)">Easy</button>
+      <button class="difficulty-btn" onclick="setDifficulty('medium', this)">Medium</button>
+      <button class="difficulty-btn" onclick="setDifficulty('hard', this)">Hard</button>
+    </div>
+
+    <div class="controls">
+      <button class="btn start-btn" onclick="startGame()">START</button>
+      <button class="btn reset-btn" onclick="resetGame()">RESET</button>
+    </div>
+
+    <div class="timer" id="timer">Time: 0s</div>
+
+    <div class="score-board">
+      <div class="score-item">
+        <div class="score-label">Matches</div>
+        <div class="score-value" id="matches">0 / 8</div>
+      </div>
+      <div class="score-item">
+        <div class="score-label">Moves</div>
+        <div class="score-value" id="moves">0</div>
+      </div>
+    </div>
+
+    <div class="memory-grid" id="memoryGrid"></div>
+    <div class="feedback" id="feedback"></div>
+
+    <div class="game-over" id="gameOver">
+      <h2>🎉 Congratulations! 🎉</h2>
+      <div class="stars" id="stars"></div>
+      <p id="finalMoves"></p>
+      <p id="finalTime"></p>
+      <p id="performance"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

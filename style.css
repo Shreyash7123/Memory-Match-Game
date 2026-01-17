@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.game-container {
+  background: #fff;
+  border-radius: 30px;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.controls, .difficulty-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.btn, .difficulty-btn {
+  padding: 10px 22px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.start-btn { background: #fee140; }
+.reset-btn { background: #a8edea; }
+
+.difficulty-btn.active {
+  background: #667eea;
+  color: white;
+}
+
+.timer {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  background: #ffecd2;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.score-value {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.memory-card {
+  aspect-ratio: 1;
+  background: #667eea;
+  border-radius: 12px;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.memory-card.flipped,
+.memory-card.matched {
+  background: white;
+}
+
+.feedback {
+  text-align: center;
+  font-size: 1.5em;
+  min-height: 40px;
+}
+
+.game-over {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.game-over.show {
+  display: block;
+}
