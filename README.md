@@ -65,6 +65,12 @@ Memory-Match-Game
 
 This project is open-source and free to use for learning and educational purposes.
 
+<img width="814" height="778" alt="image" src="https://github.com/user-attachments/assets/7e12b7ee-36c2-4452-953e-585805bff575" />
+<img width="816" height="617" alt="image" src="https://github.com/user-attachments/assets/84fd98a3-e9a9-4ca2-b09c-1ab16f187156" />
+
+
+
+
 
 
 
